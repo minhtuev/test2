@@ -21,10 +21,16 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
+	public native int evaluateJni(int a, int b);
+	
 	public void Evaluate(View v)
 	{
 		TextView txtResult = (TextView) findViewById(R.id.txtResult);
-		txtResult.setText("Clicked!");
+		txtResult.setText(Integer.toString(evaluateJni(10, 20)));
+	}
+	
+	static {
+		System.loadLibrary("evaluate-jni");
 	}
 
 }
