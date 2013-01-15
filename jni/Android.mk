@@ -16,7 +16,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE    := evaluate-jni
+LOCAL_MODULE    := evaluate-module
 LOCAL_SRC_FILES := evaluateJni.cpp
 
 include $(BUILD_SHARED_LIBRARY)

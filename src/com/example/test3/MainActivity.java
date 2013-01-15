@@ -1,5 +1,7 @@
 package com.example.test3;
 
+import java.io.Console;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
@@ -21,16 +23,23 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-	public native int evaluateJni(int a, int b);
+	public native int evaluateThis(int a, int b);
 	
 	public void Evaluate(View v)
 	{
 		TextView txtResult = (TextView) findViewById(R.id.txtResult);
-		txtResult.setText(Integer.toString(evaluateJni(10, 20)));
+		try
+		{
+			txtResult.setText(Integer.toString(evaluateThis(10, 20)));	
+		}
+		catch (Exception ex)
+		{
+			txtResult.setText(ex.toString());
+		}
 	}
 	
 	static {
-		System.loadLibrary("evaluate-jni");
+		System.loadLibrary("evaluate-module");
 	}
 
 }

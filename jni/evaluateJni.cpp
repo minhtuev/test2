@@ -4,9 +4,9 @@
 
 //using namespace std;
 
-jint Java_com_example_test3_MainActivity_evaluateJni(JNIEnv* env, jobject thiz, jint a, jint b)
+jint Java_com_example_test3_MainActivity_evaluateThis(JNIEnv* env, jobject thiz, jint a, jint b)
 {
-    return evaluateMatlab(a, b);
+    return a + b;
 }
 
 //int main()
