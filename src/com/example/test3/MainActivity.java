@@ -1,7 +1,5 @@
 package com.example.test3;
 
-import java.io.Console;
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
