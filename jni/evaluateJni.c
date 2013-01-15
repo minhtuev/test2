@@ -1,4 +1,4 @@
-//#include "evaluateMatlab.cpp"
+#include "evaluateMatlab.cpp"
 //#include <iostream>
 #include <jni.h>
 
@@ -6,7 +6,7 @@
 
 jint Java_com_example_test3_MainActivity_evaluateThis(JNIEnv* env, jobject thiz, jint a, jint b)
 {
-    return a + b;
+    return evaluateMatlab(a, b);
 }
 
 //int main()

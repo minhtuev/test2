@@ -4,10 +4,19 @@
 
 //using namespace std;
 
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
 jint Java_com_example_test3_MainActivity_evaluateThis(JNIEnv* env, jobject thiz, jint a, jint b)
 {
-    return a + b;
+    return evaluateMatlab(a, b);
 }
+
+#ifdef __cplusplus
+}
+#endif
 
 //int main()
 //{
