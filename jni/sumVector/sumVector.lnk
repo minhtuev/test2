@@ -1,0 +1,6 @@
+sumVector_initialize.obj
+sumVector_terminate.obj
+sumVector.obj
+rt_nonfinite.obj
+rtGetNaN.obj
+rtGetInf.obj

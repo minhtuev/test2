@@ -21,6 +21,8 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
+	public native int evaluateProduct(int a, int b);
+
 	public native int evaluateThis(int a, int b);
 	
 	public void Evaluate(View v)

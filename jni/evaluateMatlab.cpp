@@ -24,7 +24,7 @@
 /* Function Definitions */
 real32_T evaluateMatlab(real32_T a, real32_T b)
 {
-  return a * b;
+  return a + b;
 }
 
 /* End of code generation (evaluateMatlab.cpp) */
