@@ -17,6 +17,6 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE    := evaluate-module
-LOCAL_SRC_FILES := evaluateJni.c evaluateProduct/evaluateProductJni.c
+LOCAL_SRC_FILES := evaluateJni.c evaluateProduct/evaluateProductJni.c sumVector/sumVectorJni.c
 
 include $(BUILD_SHARED_LIBRARY)
