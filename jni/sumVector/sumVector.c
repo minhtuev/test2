@@ -37,7 +37,7 @@ void sumVector(const int32_T a[10], const int32_T b[10], int32_T c[10])
   for (i0 = 0; i0 < 10; i0++) {
     q0 = a[i0];
     q1 = b[i0];
-    qY = q0 * q1;
+    qY = q0 + q1;
     if ((q0 < 0) && ((q1 < 0) && (qY >= 0))) {
       qY = MIN_int32_T;
     } else {

@@ -3,7 +3,7 @@
 
 // JNI interface for Matlab procedure to compute the sum of two vectors
 
-jint Java_com_example_test3_MainActivity_sumVector(JNIEnv* env, jobject thiz, jintArray a, jintArray b, jintArray c)
+jint Java_com_example_test3_ArrayActivity_sumVector(JNIEnv* env, jobject thiz, jintArray a, jintArray b, jintArray c)
 {
 	// initializations, declarations, etc
     jint *c_array;
@@ -23,21 +23,13 @@ jint Java_com_example_test3_MainActivity_sumVector(JNIEnv* env, jobject thiz, ji
     }
 
     // do stuff to the array
-//    for (i=0; i<10; i++) {
-//        c_array[i] = b_array[i] + a_array[i];
-//    }
 
     sumVector(a_array, b_array, c_array);
-
-    // release the memory so java can have it again
-//    (*env)->ReleaseIntArrayElements(env, c, c_array, 0);
-
-//    return sumVector(a, b, c);
 
 	return 42;
 }
 
-jint Java_com_example_test3_MainActivity_testSumVector(JNIEnv* env, jobject thiz, jint a, jint b)
+jint Java_com_example_test3_ArraynActivity_testSumVector(JNIEnv* env, jobject thiz, jint a, jint b)
 {
 	// initializations, declarations, etc
 //    jint *c_array;
